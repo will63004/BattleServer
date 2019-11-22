@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Chat.proto" />
+    <None Remove="Header.proto" />
+    <None Remove="HeartBeat.proto" />
+    <None Remove="Login.proto" />
+    <None Remove="ProtoID.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.7.0" />
+    <PackageReference Include="Grpc" Version="2.25.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.25.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InterfaceAdapters\InterfaceAdapters.csproj" />
+    <ProjectReference Include="..\Network\Network.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Chat.proto" />
+    <Protobuf Include="Header.proto" />
+    <Protobuf Include="HeartBeat.proto" />
+    <Protobuf Include="Login.proto" />
+    <Protobuf Include="ProtoID.proto" />
+  </ItemGroup>
+
+</Project>

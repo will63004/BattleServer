@@ -1,0 +1,16 @@
+﻿################################################################################
+# 這個 .gitignore 檔案由 Microsoft(R) Visual Studio 自動建立。
+################################################################################
+
+/.vs/BattleServer/v16/TestStore/0
+/.vs/BattleServer/v16/Server/sqlite3
+/BattleServer/bin/Debug/netcoreapp3.0
+/BattleServer/obj
+/Game/bin/Debug/netcoreapp3.0
+/Game/obj
+/InterfaceAdapters/bin/Debug/netcoreapp3.0
+/InterfaceAdapters/obj
+/Network/bin/Debug/netcoreapp3.0
+/Network/obj
+/ProtoService/bin/Debug/netcoreapp3.0
+/ProtoService/obj

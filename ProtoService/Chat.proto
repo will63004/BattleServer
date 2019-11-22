@@ -1,0 +1,18 @@
+syntax = "proto3";
+package protocol;
+
+import "header.proto";
+
+message ChatReq{
+    protocol.Header header = 1;
+    string content = 2;	
+}
+
+message ChatAck{
+    protocol.Header header = 1;
+    string content = 2;
+}
+
+service EchoChat{
+rpc SendChat(ChatReq) returns(ChatAck);
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+package protocol;
+
+enum ProtoID {
+    InValid = 0;
+    Req_HeartBeat = 1;
+    Ack_HeartBeat = 2;
+    Req_Login = 3;
+    Ack_Login = 4;
+	Ack_MessageBroadcast = 5;
+  }

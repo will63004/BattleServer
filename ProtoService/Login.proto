@@ -1,0 +1,23 @@
+syntax = "proto3";
+package protocol;
+
+import "header.proto";
+
+message LoginReq{
+    protocol.Header header = 1;
+}
+
+message LoginAck{
+    protocol.Header header = 1;
+
+    enum LoginResult {
+        Default = 0;
+        Success = 1;
+        Failure = 2;
+      }
+      LoginResult result = 3;
+}
+
+service EchoLogin{
+rpc Login(LoginReq) returns(LoginAck);
+}

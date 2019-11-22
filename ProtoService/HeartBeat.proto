@@ -1,0 +1,16 @@
+syntax = "proto3";
+package protocol;
+
+import "header.proto";
+
+message HeartBeatReq{
+    protocol.Header header = 1;
+}
+
+message HeartBeatAck{
+    protocol.Header header = 1;
+}
+
+service EchoHeartBeat{
+rpc HeartBeat(HeartBeatReq) returns(HeartBeatAck);
+}
