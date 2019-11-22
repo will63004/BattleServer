@@ -14,3 +14,9 @@
 /Network/obj
 /ProtoService/bin/Debug/netcoreapp3.0
 /ProtoService/obj
+/.vs/BattleServer/v16
+/ProtoService/bin/Release/netcoreapp3.0
+/Network/bin/Release/netcoreapp3.0
+/InterfaceAdapters/bin/Release/netcoreapp3.0
+/Game/bin/Release/netcoreapp3.0
+/BattleServer/bin/Release/netcoreapp3.0
